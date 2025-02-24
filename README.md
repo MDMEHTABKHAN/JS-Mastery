@@ -17,7 +17,7 @@ Welcome to the **JavaScript Learning Repository**! This repository covers JavaSc
 - [DOM Manipulation]
 - [Events and Event Listeners]
 - [Error Handling (try-catch)]
-- 
+  
 ### **3. Advanced**
 - [Asynchronous JavaScript (Callbacks, Promises)]
 - [Async/Await]
