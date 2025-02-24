@@ -1,0 +1,9 @@
+# Use for when you know the number of iterations beforehand.
+
+# Use while when the number of iterations is unknown and depends on a condition.
+
+# Use do...while when you need the code to execute at least once.
+
+# Use for...in to iterate over object keys (but be mindful of its behavior with arrays).
+
+# Use for...of to iterate over iterable objects (arrays, strings, maps, sets, etc.). This is generally the preferred way to iterate over arrays.
