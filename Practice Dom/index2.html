@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p id="js"></p>
+    
+    <button onclick="hi()" id="jss">Submit</button>
+    <script>
+        // document.addEventListener("click", msg);
+        // function msg(){
+        //        click one time event work
+        //        document.getElementById("js").innerText = "Hey Are you coming";
+
+        // }
+
+        // click two time event work
+        // document.addEventListener("dblclick", hello);
+        // function hello(){
+        //     document.getElementById("js").innerText = "Hi Hey Hello";
+        // }
+
+        // when i enter my mouse on browser then some event 
+        document.addEventListener("mouseenter", hey);
+        function hey(){
+            document.getElementById("js").innerText = "Hi Hey Hello";
+        }
+
+
+        function hi(){
+            document.getElementById("jss").innerText = "Again Submit";
+            document.getElementById("jss").style.color = "blue";
+            // document.getElementById("jss").style.backgroundColor = "yellow";
+            document.getElementById("jss").style.border = "3px solid red";
+            document.getElementById("jss").style.marginLeft = "550px";
+            document.getElementById("jss").style.padding = "30px";
+            document.getElementById("jss").style.linearGradient = "(to right, rgba(150,180,200,45))"
+        
+        }
+
+    </script>
+</body>
+</html>

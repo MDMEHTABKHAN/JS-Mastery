@@ -24,3 +24,9 @@ for (let i = 0; i < 10; i++) {
     console.log(i);
 }
 
+
+
+for (let k = 1; k <= 10; k++) {
+  console.log(`Number: ${k}`);
+}
+

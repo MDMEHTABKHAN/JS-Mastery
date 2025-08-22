@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- create tag elemnet className through javascript -->
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <script>
+    let title = document.createElement("h1");
+    // create class name
+    title.className = "heading";
+    // create content
+    title.textContent = "Tap Academy";
+    title.style.fontSize = "25px";
+    console.log(title);
+    // show on browser
+    document.body.appendChild(title)
+    
+
+    // remove anything n document body
+
+    let ul = document.querySelector("ul")
+    console.log(ul);
+    let lists = document.querySelectorAll("li");
+    console.log(lists);
+    // remove first childe
+    firstLi = ul.querySelector("li"); 
+    ul.removeChild(firstLi); 
+    // remove second li
+     secondLi = ul.querySelector("li");
+     ul.removeChild(secondLi)
+
+    
+
+    // remove all li
+    //  for(list of lists){
+    //     ul.removeChild(list)
+    //  }
+
+    </script>
+</body>
+</html>

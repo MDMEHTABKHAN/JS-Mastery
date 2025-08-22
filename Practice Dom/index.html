@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object model </title>
+</head>
+<body>
+    <!-- d -->
+    <p id="para">Lorem ipsum dolor sit. <span>hii</span> <b>Bold</b></p>
+
+    <!-- class -->
+     <ul>
+        <li class="tech">ONE</li>
+        <li class="tech">TWO</li>
+        <li class="tech">THREE</li>
+        <li class="tech">FOUR</li>
+     </ul>
+
+     <!-- tag name  -->
+      <h2>Hola</h2>
+
+      <!-- query selctor -->
+
+      <h3>Lorem ipsum dolor sit.</h3>
+      <p id="parag">Lorem ipsum dolor sit amet.</p>
+      <h4 class="heading">Heading</h4>
+
+    <script>
+    //   id 
+    let para = document.getElementById("para");
+    // targeted whole element of html
+    console.log(para);
+    para.style.color = "blue";
+    // targeted only text
+    console.log(para.innerText);
+    // targeted all html tag
+    console.log(para.innerHTML);
+
+    // class
+    
+    let tech = document.getElementsByClassName("tech");
+    console.log(tech);
+    console.log(tech[2].innerText);
+    tech[3].innerText = "Five";
+    tech[3].style.fontSize = "24px";
+    tech[3].style.backgroundColor = "red"
+
+    // tag
+
+    let tag = document.getElementsByTagName("h2");
+    console.log(tag);
+    tag[0].style.color = "white";
+    tag[0].style.backgroundColor = "black"
+    
+    // querySelector(we can pass anything like tagName, Id and className)
+    // tag
+    let heading3 = document.querySelector("h3");
+    console.log(heading3);
+
+    // id
+    let parag = document.querySelector("#parag");
+    console.log(parag);
+
+
+    // class
+    let heading = document.querySelector(".heading");
+    console.log(heading);
+    heading.style.color = "blue";
+    heading.style.padding = "20px"
+    heading.style.margin = "15px"
+    heading.style.textAlign = "center";
+    heading.style.border = "3px dotted red";
+    // change classNmae
+    heading.className = "Mehtab";
+    // change classList
+    heading.classList = "mehtab khan md";
+    // give title
+    heading.setAttribute("title", "Apna college");
+    
+    
+    
+        
+        
+       
+        
+    </script>
+</body>
+</html>
